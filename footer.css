@@ -1,0 +1,24 @@
+#footer{
+	background: rgb(5, 48, 103);
+	width:100%;
+	height: 300px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+.footer{
+	color: white;
+	width: 14%;
+	float: left;
+	margin: 3%;
+}
+.footer a{
+	color: white;
+	text-decoration: none;
+	
+}
+#footer h2{
+	font-size:1.5vw;
+	font-family: 'Delius Unicase', cursive;
+	margin-bottom: 5%;
+}
