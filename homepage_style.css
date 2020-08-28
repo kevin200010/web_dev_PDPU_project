@@ -2,7 +2,7 @@
 	margin:0px;
 }
 #nav{
-	background-color: rgb(5, 48, 103);
+	background:  linear-gradient(to right, #0F2C5D ,#2c76f5);
 	display: grid; grid-template-columns: 20% 80%;
 	border-radius: 15px;
 	margin-left: 0.5%;
@@ -58,9 +58,10 @@
 	width: 30%;
 	height: 100%;
 	list-style: none;
-	background-color: #d9bfff;
-	opacity: 100%;
+	background-color: #7ea2e0;
+	opacity: 90%;
 	position: relative;
+
 }
 #manu ul li ul li ul{
 	text-decoration: none;
@@ -71,10 +72,10 @@
 	text-decoration: none;
 	width: 97%;
 	padding-left: 3%;
-	height: 100%;
 	list-style: none;
 	position: relative;
 	font-weight: 100;
+	height: auto;
 }
 #manu ul li ul li a{
 	text-decoration: none;
@@ -95,7 +96,7 @@
 #manu ul li:click{
 	background-color:  #c27721;
 }
-#manu ul li:hover>ul{
+#manu ul li:hover	>ul{
 	display: block;
 }
 #manu ul li:hover>ul li ul{
@@ -104,7 +105,8 @@
 
 #manu ul li ul li:hover , click{
 	display: block;
-	color: white;	
+	background-color: #dfe1e6;
+	color: black;	
 	text-decoration: underline;
 	font-weight: 700;
 }
@@ -140,7 +142,7 @@
 	text-align: center;
 }
 
-@media(min-width: 992px)
+/*@media(min-width: 992px)
 {
 			.col-lg-1 , .col-lg-2 ,.col-lg-3 , .col-lg-4 ,.col-lg-5 , .col-lg-6 ,.col-lg-7 , .col-lg-8 ,.col-lg-9 , .col-lg-10 ,
 			.col-lg-11 , .col-lg-12 
@@ -347,20 +349,28 @@
 
 				width: 100%;
 			}
-		}
+		}*/
 #main_part{
 	display: grid;
 	grid-template-columns: 50% 50%;
 }
-
+.section{
+	display: grid;
+	grid-template-columns: 50% 50%;
+}
 #part1{
+	margin: 0%;
+	margin-left: 2%;
+
 	box-sizing: border-box;
 	border-radius: 15px;
-	border: groove 2px;
+	border: solid 2px;
 	width:100%;
 	height: 100%;	
 }
 #part2{
+	padding-left: 5%;
+	margin: 0%;
 
 }
 #part2_1
@@ -370,11 +380,14 @@
 }
 
 
-.flip-card {
+.flip-card{
+  position:relative;
   background-color: transparent;
-  width: 300px;
-  height: 300px;
+  width: 17vw;
+  height: 18vw;
   perspective: 1000px;
+  margin-bottom: 10%
+
 }
 
 .flip-card-inner {
@@ -400,7 +413,7 @@
 }
 
 .flip-card-front {
-  background-color: #bbb;
+  background-color: white;
   color: black;
 }
 
@@ -408,4 +421,11 @@
   background-color: #2980b9;
   color: white;
   transform: rotateY(180deg);
+}
+
+.flip-card-back p:hover,click{
+	color: black;
+}
+.flip-card-back a:hover,click{
+	color: black;
 }

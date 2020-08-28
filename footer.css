@@ -1,10 +1,11 @@
 #footer{
-	background: rgb(5, 48, 103);
+	background:  linear-gradient(to right, #0F2C5D ,#2c76f5);
 	width:100%;
-	height: 300px;
+	height: 20vw;
 	left: 0;
 	bottom: 0;
 	right: 0;
+	margin-bottom: 0px;
 }
 .footer{
 	color: white;
@@ -15,10 +16,80 @@
 .footer a{
 	color: white;
 	text-decoration: none;
-	
+	font-size:1vw;
 }
 #footer h2{
 	font-size:1.5vw;
 	font-family: 'Delius Unicase', cursive;
 	margin-bottom: 5%;
 }
+
+.footer a:hover{
+	color: yellow;
+	font-weight: 900;
+	font-size: 1.2vw;
+	text-decoration: underline;
+}
+
+/*image sliding part*/
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+85% { left: -300%; }
+100% { left: -400%; }
+}
+
+body { margin: 0; } 
+div#slider { overflow: hidden; }
+div#slider figure img {width: 20%; float: left; }
+div#slider figure {
+	padding: auto; 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+
+  
+.blinking{
+    animation:blinkingText 1.2s infinite;
+    align-items: center;
+}
+
+@keyframes blinkingText{
+    0%{     color: #000;    }
+    49%{    color: #000; }
+    60%{    color: transparent; }
+    99%{    color:transparent;  }
+    100%{   color: #000;    }
+}
+#blinking-botton{
+	border-radius: 5px;
+	transition-duration: 0.4s;
+	background:linear-gradient(to right,#87a4d4 ,#2c76f5) 
+
+}
+#blinking-botton:hover{
+	box-sizing: border-box;	
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+
+}
+
+#blinking-botton:hover .blinking{
+	color: white;
+	background-color: white;
+}
+
+#blinking-botton:hover>a .blinking h1{
+	color: white;
+	animation:blinkingText 0.5s infinite;	
+}
+
